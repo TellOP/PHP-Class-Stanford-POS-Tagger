@@ -40,9 +40,6 @@ namespace TellOP\Controllers;
 class StanfordESTagger extends WebServiceClientController {
 
     public function __construct($appObject) {
-
-        echo $_SERVER["DOCUMENT_ROOT"];
-
         $config = $appObject->getConfig();
 
         $this->model = $config['stanford-spanish-tagger']['model'];
